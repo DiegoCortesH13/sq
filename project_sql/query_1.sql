@@ -9,3 +9,18 @@ SELECT * from january_jobs
 Where EXTRACT(MONTH, job_posted_date) = 1
 LIMIT 10;
 
+SELECT
+    *
+FROM
+    january_jobs
+UNION
+SELECT
+    *   
+FROM
+    february_jobs
+UNION
+SELECT
+    *
+FROM
+    march_jobs;
+    '
