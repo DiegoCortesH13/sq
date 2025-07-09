@@ -12,26 +12,34 @@ To practice and showcase SQL data analysis skills by examining a large database 
 
 ## 🧠 Key Questions Explored
 
-- What are the most in-demand job titles globally?
-- Which countries and cities offer the highest average salaries?
-- How do remote, hybrid, and on-site roles compare in frequency?
-- What are the top industries hiring for tech-related roles?
-- How does the demand for skills (e.g., SQL, Python) vary by region?
+- What are the top-paying jobs for my role?
+- What are the skills required for these top-paying roles?
+- What are the most in-demand skills for my role?
+- What are the top skills based on salary for my role?
+- What are the most optimal skills to learn?
+    a. Optimal = High Demand + High Paying
 
 ---
 
 ## 🗃️ Dataset Overview
 
-The database includes the following key fields:
-- `job_title`
-- `company_name`
-- `employment_type` (Full-time, Part-time, Contract)
-- `job_location` (country, city, remote/on-site)
-- `salary_year_avg`
-- `industry`
-- `job_description`
-- `skills_required`
-- `posting_date`
+The database "job_postings_fact" includes the following key fields:
+- 'job_id'
+- 'company_id'
+- 'job_title_short'
+- 'job_title'
+- 'job_location'
+- 'job_via'
+- 'job_schedule_type'
+- 'job_work_from_home'
+- 'search_location'
+- 'job_posted_date'
+- 'job_no_degree'
+- 'job_health_insurance'
+- 'job_country'
+- 'salary_rate'
+- 'salary_year_avg'
+- 'salary_hour_avg'
 
 > *Note: Dataset was pre-cleaned and loaded into a relational SQL database for query-based analysis.*
 
