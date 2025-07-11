@@ -175,13 +175,13 @@ The following query produces the desired result to answer the question:
         r.rank, r.job_id, r.job_title, c.name, r.salary;
 
 ```
-Here’s a concise breakdown of the top skills associated with the highest-paying Data Analyst and Data Scientist job postings:
+Here’s a breakdown of the top skills associated with the highest-paying Data Analyst and Data Scientist job postings:
 1. **Python and SQL Dominate Across Roles:** Both Data Analysts and Data Scientists always require Python and SQL, validating them as fundamental skills in high-paying data roles.
 2. **Role-Specific Specializations:**
     
-        Data Analysts often list tools like Excel, Tableau, Power BI, Looker, and Pandas, reflecting a focus on data manipulation, reporting, and BI tools.
+    - Data Analysts often list tools like Excel, Tableau, Power BI, Looker, and Pandas, reflecting a focus on data manipulation, reporting, and BI tools.
 
-        Data Scientists prefer Spark, Hadoop, AWS, Java, and machine learning libraries (e.g., scikit-learn, TensorFlow) more frequently, reflecting more advanced modeling and engineering requirements.
+    - Data Scientists prefer Spark, Hadoop, AWS, Java, and machine learning libraries (e.g., scikit-learn, TensorFlow) more frequently, reflecting more advanced modeling and engineering requirements.
 3. **Deep Technical Stacks in Higher Salaries:**
     Higher-paying listings often include a larger and more diverse skill set, such as cloud platforms, programming languages beyond Python, and data infrastructure tools, indicating employers are willing to pay more for multi-skilled professionals.
 
@@ -221,8 +221,9 @@ WITH ranked_skills as(
 ```
 ### Query Results
 
-![Most Demanded skills](assets\job_count_per_skill.png)
+![Most Demanded skills](assets/job_count_per_skill.png)
 *Graphic 1 - Visualization of the top 5 skills per role by job postings count*
+
 
 
 
@@ -399,7 +400,7 @@ WITH skills_demand AS (
 
 
 ```
-Results are as follow:
+### Results are as follow:
 ### Data Analyst – Top 10 Skills by Salary and Demand
 
 | Rank | Skill       | Demand Count | Avg Salary | Demand-Weighted Score |
@@ -448,6 +449,7 @@ The optimized skill rankings for remote Data Analyst and Data Scientist roles sh
 🧠 Confirmed the continued dominance of core data skills: Tools like SQL, Python, and Tableau consistently ranked at the top for both Data Analyst and Data Scientist roles, reaffirming their importance in the job market across experience levels and domains.
 
 ☁️ Recognized the rising value of cloud and ML tools: In Data Scientist roles, tools like AWS, Spark, and TensorFlow featured prominently in high-paying jobs, reinforcing the importance of cloud computing and machine learning in modern data careers.
+
 ---
 ## 📋 Conclusions
 
