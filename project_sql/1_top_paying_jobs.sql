@@ -10,20 +10,20 @@ What are the top-paying Data Analyst and Data Scientist roles?
 WITH ranked_jobs AS (
     SELECT
         job_id,
-        job_title,
+        job_title_short AS job_title,
         job_location AS location,
         job_schedule_type AS schedule_type,
         salary_year_avg AS salary,
         job_posted_date,
         company_id,
         ROW_NUMBER() OVER (
-            PARTITION BY job_title
+            PARTITION BY job_title_short
             ORDER BY salary_year_avg DESC
         ) AS rank
     FROM
         job_postings_fact
     WHERE
-        job_title IN ('Data Analyst', 'Data Scientist')
+        job_title_short IN ('Data Analyst', 'Data Scientist')
         AND job_location IN ('Anywhere', 'Mexico', 'Mexico City', 'Remote')
         AND salary_year_avg IS NOT NULL
 )
@@ -43,9 +43,4 @@ LEFT JOIN
 WHERE
     rank <= 10;
 
-SELECT DISTINCT(job_location) as location
-FROM
-    job_postings_fact
-WHERE
-    job_title IN ('Data Analyst', 'Data Scientist')
-    AND salary_year_avg IS NOT NULL;
+
